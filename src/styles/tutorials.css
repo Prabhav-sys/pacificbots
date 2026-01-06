@@ -1,0 +1,95 @@
+/* ===============================
+   TUTORIALS PAGE (PUBLIC)
+================================ */
+
+.tutorials-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 90px 22px 140px;
+}
+
+/* Header */
+.tutorials-header {
+  max-width: 720px;
+  margin-bottom: 80px;
+}
+
+.tutorials-header .section-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  color: var(--accent);
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.tutorials-header h1 {
+  font-family: var(--font-playfair);
+  font-size: 3.2rem;
+  line-height: 1.05;
+  margin-bottom: 16px;
+}
+
+.tutorials-header p {
+  font-size: 1.05rem;
+  color: #94a3b8;
+}
+
+/* List */
+.tutorials-list {
+  display: grid;
+  gap: 80px;
+}
+
+/* Card */
+.tutorial-card {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: center;
+  padding: 36px;
+  border-radius: 26px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.04),
+    rgba(255,255,255,0)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* Video */
+.tutorial-video {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+}
+
+.tutorial-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Info */
+.tutorial-info h2 {
+  font-size: 1.6rem;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.tutorial-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #cbd5f5;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .tutorial-card {
+    grid-template-columns: 1fr;
+  }
+}

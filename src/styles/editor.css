@@ -1,0 +1,264 @@
+.editor-input,
+.editor-textarea {
+  width: 100%;
+  background: var(--admin-card);
+  border: 1px solid var(--admin-border);
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--admin-text);
+}
+
+.block-card {
+  background: var(--admin-card);
+  border: 1px solid var(--admin-border);
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+
+/* ===============================
+   BLOCK EDITOR — PREMIUM UX
+================================ */
+
+.editor-blocks {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.block-card {
+  background: var(--admin-card);
+  border: 1px solid var(--admin-border);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.block-type {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  color: var(--admin-muted);
+}
+
+.block-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.block-actions button {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--admin-border);
+  background: transparent;
+  color: var(--admin-text);
+  cursor: pointer;
+}
+
+.block-actions button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.block-danger {
+  color: var(--admin-danger);
+  border-color: var(--admin-danger);
+}
+
+
+/* ===============================
+   ADMIN PAGE LAYOUT
+================================ */
+
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem 4rem;
+}
+
+.page h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #f8fafc;
+}
+
+/* ===============================
+   EDITOR GROUPS (CARDS)
+================================ */
+
+.editor-group {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.8rem;
+}
+
+.editor-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.45rem;
+  color: #cbd5e1;
+}
+
+/* ===============================
+   INPUTS / TEXTAREAS / SELECT
+================================ */
+
+.editor-input,
+.editor-textarea,
+.editor-select {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  color: #f8fafc;
+  font-size: 0.95rem;
+}
+
+.editor-textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.editor-select {
+  max-width: 240px;
+}
+
+.editor-input:focus,
+.editor-textarea:focus,
+.editor-select:focus {
+  outline: none;
+  border-color: #38bdf8;
+}
+
+/* ===============================
+   BLOCK TOOLBAR
+================================ */
+
+.editor-tools {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.editor-tools button {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #f1f5f9;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.editor-tools button:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+/* ===============================
+   BLOCK LIST
+================================ */
+
+.editor-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ===============================
+   BLOCK CARD
+================================ */
+
+.block-card {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 0.8rem;
+}
+
+/* ===============================
+   BLOCK HEADER
+================================ */
+
+.block-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.block-type {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #93c5fd;
+}
+
+/* ===============================
+   BLOCK ACTIONS
+================================ */
+
+.block-actions button {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-left: 0.3rem;
+  transition: color 0.15s ease;
+}
+
+.block-actions button:hover {
+  color: #f8fafc;
+}
+
+.block-danger {
+  color: #f87171;
+}
+
+.block-danger:hover {
+  color: #fecaca;
+}
+
+/* ===============================
+   CODE BLOCK
+================================ */
+
+.editor-textarea.code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85rem;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* ===============================
+   PRIMARY ACTION BUTTON
+================================ */
+
+.btn-primary {
+  margin-top: 2.5rem;
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  padding: 0.75rem 1.7rem;
+  border-radius: 12px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.95;
+}
